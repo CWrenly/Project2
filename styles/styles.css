@@ -1,0 +1,217 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  position: relative;
+}
+body img.fixed-image {
+  min-height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: -5;
+  bottom: 0;
+  left: 0;
+}
+body header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 10px 6px -6px #777;
+}
+body header section.logo {
+  flex: 2 1 400px;
+  display: flex;
+  align-items: center;
+}
+body header section.logo h1 {
+  font-size: 2.5rem;
+}
+body header section.logo img {
+  width: 6vw;
+  height: 6vw;
+}
+body header nav {
+  flex: 5 1 500px;
+}
+body header nav ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+body header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.35rem;
+  transition: all 0.5s ease;
+  padding-bottom: 0.3rem;
+}
+body header nav ul li a:hover {
+  color: darkorange;
+  border-bottom: 3px solid darkorange;
+}
+body main section.background-image {
+  min-height: 70vh;
+  background-image: url(../images/日本櫻花.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.75s ease;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 20px;
+}
+body main section.background-image div.filter {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  min-height: 70vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section.background-image h3 {
+  color: white;
+  font-size: 2.5rem;
+  z-index: 1;
+  text-align: center;
+}
+body main section.info-circle {
+  background-color: white;
+  padding: 2rem 1rem;
+}
+body main section.info-circle h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+body main section.info-circle div.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main section.info-circle div.circles div.circle {
+  padding: 1rem;
+  flex: 0 1 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main section.info-circle div.circles div.circle img {
+  width: 90%;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+  padding: 0.3rem;
+}
+body main section.info-circle div.circles div.circle img:hover {
+  border: 3px solid rgb(96, 155, 9);
+}
+body main section.info-circle div.circles div.circle p {
+  font-size: 1.35rem;
+  text-align: center;
+}
+body main section.empty-container {
+  min-height: 70vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main section.empty-container h3 {
+  font-size: 2rem;
+  color: white;
+}
+body main section.google-map {
+  background-color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+body main h3 {
+  font-size: 2.5rem;
+}
+body main p {
+  font-size: 1.25rem;
+  margin: 1.25rem;
+}
+body main iframe {
+  width: 100%;
+  height: 40vh;
+}
+
+footer {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+footer section.logo img {
+  width: 20vw;
+}
+footer section.logo h3 {
+  font-size: 2.5rem;
+}
+footer section.link {
+  margin-top: 2rem;
+}
+footer section.link a img {
+  width: 5vh;
+  margin: 0rem 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  body header {
+    position: relative;
+  }
+  body header section.logo {
+    flex-direction: column;
+  }
+  body header section.logo img {
+    width: 50vw;
+    height: 50vw;
+  }
+  body header nav ul {
+    flex-direction: column;
+  }
+  body header nav ul li {
+    padding: 0.5rem 0.25rem;
+  }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(152, 57, 255, 0.5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: purple;
+}/*# sourceMappingURL=styles.css.map */
